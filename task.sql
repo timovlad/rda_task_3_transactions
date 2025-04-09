@@ -2,7 +2,6 @@ USE ShopDB;
 
 START TRANSACTION;
 
-INSERT INTO Customers (FirstName, LastName, Email, Address) VALUES ('John', 'Doe', 'j@dou.ua', 'Far, far away');
 INSERT INTO Orders (CustomerID, Date)
 VALUES (1, '2023-01-01');
 SET @OrderID = LAST_INSERT_ID();
